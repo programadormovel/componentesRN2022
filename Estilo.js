@@ -20,6 +20,17 @@ const Estilo = StyleSheet.create({
       width: 50,
       height: 50,
       borderRadius: 100,
+    },
+    caixa: {
+      minWidth:200,
+      borderWidth:1,
+      borderRadius: 8,
+      marginTop: 32,
+      marginBottom: 32,
+      elevation: 4,
+      color: 'red',
+      backgroundColor: "#c9c9c9",
+      padding: 16,
     }
   });
 

@@ -1,13 +1,18 @@
-import React from 'react';
-import { View, Text, Image } from 'react-native';
+import React, {useState} from 'react';
+import { View, Text, Image, 
+    TextInput, Alert } from 'react-native';
 
 import estilo from './Estilo';
 
 const App = () => {
+  // Estado
+  const [mensagem, setMensagem] = useState();
+  const [nome, setNome] = useState('Adriano');
+
   return (
     <View style={estilo.container}>
       <Text style={estilo.texto}>
-        Hello World!
+        {nome}
       </Text>
 
       <Image 
@@ -23,7 +28,12 @@ const App = () => {
       />
 
       <TextInput 
-        
+          style={estilo.caixa}
+          multiline
+          require
+          numberOfLines={5}
+          defaultValue={'texto exemplo'}
+          onChangeText={setNome}
       />
 
       <Text style={estilo.texto1}>
