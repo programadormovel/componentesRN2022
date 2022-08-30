@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { View, Text, Image, 
-    TextInput, Alert } from 'react-native';
+    TextInput, Alert, ScrollView } from 'react-native';
 
 import estilo from './Estilo';
 
@@ -10,16 +10,15 @@ const App = () => {
   const [nome, setNome] = useState('Adriano');
 
   return (
+    <ScrollView>
     <View style={estilo.container}>
       <Text style={estilo.texto}>
         {nome}
       </Text>
-
       <Image 
         style={estilo.logo}
         source={require('./assets/icon.png')}
       />
-
       <Image
         style={estilo.logo}
         source={{
@@ -39,6 +38,7 @@ const App = () => {
       <Text style={estilo.texto1}>
         Mais um Hello World!</Text>
     </View>
+    </ScrollView>
   )
 }
 
