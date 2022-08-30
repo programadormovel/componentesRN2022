@@ -14,7 +14,7 @@ const App = () => {
       <Text style={estilo.texto}>
         {nome}
       </Text>
-
+    <Text>alçskjflçsa</Text>
       <Image 
         style={estilo.logo}
         source={require('./assets/icon.png')}
