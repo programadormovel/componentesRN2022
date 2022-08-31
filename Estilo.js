@@ -9,12 +9,19 @@ const Estilo = StyleSheet.create({
     },
     texto: {
       fontWeight:'bold', 
-      fontSize:48
+      fontSize:48,
+      
     },
     texto1: {
       fontWeight:'bold', 
       fontSize:48,
       color: 'red',
+      backgroundColor: '#ff00cc',
+      borderRadius:32,
+      padding: 16,
+      elevation: 8,
+      shadowColor: 'yellow',
+      borderWidth:1
     },
     logo: {
       width: 50,
